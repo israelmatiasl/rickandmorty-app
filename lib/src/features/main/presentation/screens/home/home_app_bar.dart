@@ -4,13 +4,14 @@ import 'package:rickandmorty_app/src/core/utils/palette.dart';
 
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
 
-  const HomeAppBar();
+  const HomeAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: AppPalette.transparentColor,
+      backgroundColor: AppPalette.backgroundColor,
       automaticallyImplyLeading: false,
+      surfaceTintColor: AppPalette.transparentColor,
       elevation: 0,
       title: Row(
         children: [

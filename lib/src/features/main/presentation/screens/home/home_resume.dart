@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rickandmorty_app/src/core/utils/palette.dart';
+import 'package:rickandmorty_app/src/layouts/widgets/button_shape_with_icon.dart';
 
 class HomeResume extends StatelessWidget {
   const HomeResume({super.key});
@@ -15,7 +16,7 @@ class HomeResume extends StatelessWidget {
           children: [
             Expanded(
               flex: 2,
-              child: Image.asset('assets/images/resume_icon.png', fit: BoxFit.fitWidth),
+              child: Image.asset('assets/images/icons/resume.png', fit: BoxFit.fitWidth),
             ),
             SizedBox(width: 32.0),
             Expanded(
@@ -34,19 +35,17 @@ class HomeResume extends StatelessWidget {
                   Text('Progreso:'),
                   Text('10/20 preguntas'),
                   SizedBox(height: 20),
-                  ElevatedButton(
+                  ButtonShapeWithIcon(
+                    text: 'CONTINUAR',
+                    icon: Icons.play_arrow,
                     onPressed: () { },
-                    style: ElevatedButton.styleFrom(
-                      padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 10.0),
-                    ),
-                    child: const Text('Continuar', style: TextStyle(fontWeight: FontWeight.bold),),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
+                  )
+                ]
+              )
+            )
+          ]
+        )
+      )
     );
   }
 }

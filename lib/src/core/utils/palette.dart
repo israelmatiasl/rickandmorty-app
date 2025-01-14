@@ -24,4 +24,5 @@ abstract class AppPalette {
   static const inputBorderActiveColor = Color.fromRGBO(3, 218, 197, 1); // Bordes activos
   static const inputBorderInactiveColor = Color.fromRGBO(60, 60, 60, 1); // Bordes inactivos
   static const cardBackgroundColor = Color.fromRGBO(36, 41, 54, 1); // Fondo de tarjetas
+  static const splashColor = Color.fromRGBO(3, 218, 197, 0.5); // Color del splash
 }
